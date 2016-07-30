@@ -295,4 +295,29 @@ button:focus {outline:0;}
     padding-left: 35px;
 }
 
+.card {
+    height: 100%;
+}
+@media (max-width: 770px) {
+    .card{
+        width: 100% !important;
+    }
+    .ticket-btn{
+        padding:6px 16px 6px;
+    }
+}
 
+.title {
+    max-height: 1em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 90%;
+    white-space: nowrap;
+}
+
+.subtitle {
+    max-height: 2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80%;
+}
