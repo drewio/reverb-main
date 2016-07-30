@@ -245,37 +245,6 @@ button:focus {outline:0;}
     margin: 0 auto;
 }
 
-
-
-.btn {
-    display: block;
-    color: #4c4c4c;
-    fill: #4c4c4c;
-    font-size: 1.125em;
-    background: #f0f0f0;
-    padding: .975em 1.5em;
-    text-align: center;
-    white-space: nowrap
-}
-
-.btn-green {
-    background: #3a9558;
-    color: #bfe7cc;
-    fill: #bfe7cc
-}
-
-.btn-spotify,.btn-spotify-modal {
-    font-weight: 600;
-    border-radius: 30em;
-    color: #fff;
-    fill: #fff;
-    padding: .975em 1.75em
-}
-
-.btn-spotify {
-    border: 2px solid #fff
-}
-
 .main-page-login {
     font-size: 13px;
     line-height: 1.5;
