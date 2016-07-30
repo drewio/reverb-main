@@ -221,3 +221,11 @@ body {
     transform: translateX(-50%) translateY(-50%);
 }
 button:focus {outline:0;}
+
+.search-bar {
+    display: inline-block;
+    vertical-align: middle;
+    height: 17px;
+    width: 308px;
+    padding-left: 30px;
+}
