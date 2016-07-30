@@ -1,3 +1,57 @@
-<p>These are the search results for a certain user</p>
+<div class="search-container">
+	<div class="search-header">
+		<div class="top-bar">
+			<h2>Reverb</h2>
+		</div>
+	</div>
 
-<p>{{result}}</p>
+	<div class="search-content">
+		<div class="search-table-container">
+
+			<div class="columns is-multiline">
+
+				<div class="column is-one-quarter" ng-repeat="user in users">
+					<div class="card">
+						<div class="grid-item-date">
+							23 Feb
+						</div>
+
+						<div class="grid-item-percent">
+							80%
+						</div>
+						<!-- IMAGE -->
+						<div class="card-image">
+							<figure class="image is-4by3">
+								<img src="http://placehold.it/300x225" alt="">
+							</figure>
+						</div>
+
+						<!-- PROGRESS BAR -->
+						<div class="progress-bar">
+							<div class="w3-progress-container w3-round-xlarge">
+				  				<div class="w3-progressbar w3-round-xlarge w3-orange" style="width:80%"></div>
+							</div>
+						</div>
+
+						<!-- CONTENT -->
+						<div class="card-content">
+							<div class="media">
+								<div class="media-content">
+									<p class="title is-5">{{user}}</p>
+									<p class="subtitle is-6">23 Smith St, Melbourne</p>
+									<div class="check-it-btn">
+										<button class="shit" id="btn-comment">Check it out</button>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			
+
+		</div>
+	</div>
+</div>

@@ -3,18 +3,19 @@
 <html lang="en" ng-app="myApp">
     <head>
         <title>My AngularJS App</title>
-        <!-- <link rel="stylesheet" href="app.css"> -->
+        <link rel="stylesheet" href="bulma.css">
+        <link rel="stylesheet" href="styles.css">
+
+        <!--<link rel="stylesheet" href="lib/milligram.css">-->
     </head>
     <body>
+        <div ng-view class="view-container"></div>
 
-        <!--<ul class="menu">
-            <li><a href="#!/">view1</a></li>
-            <li><a href="#!/user/gig">view2</a></li>
-        </ul>-->
+        <div class="background-layer"></div>
 
-        <div ng-view></div>
 
         <script src="lib/angular.js"></script>
+        <script src="lib/angular-material.js"></script>
         <script src="lib/angular-route.js"></script>
         <script src="app.js"></script>
 
