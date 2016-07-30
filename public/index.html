@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="myApp" >
+    <head>
+        <title>My AngularJS App</title>
+        <link rel="stylesheet" href="bulma.css">
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+    <body>
+        <div id="route-view" ng-view searchid="<%=searchid%>" class="view-container"></div>
+        <div class="background-layer"></div>
+
+        
+        <script src="lib/angular.js"></script>
+        <script src="lib/angular-material.js"></script>
+        <script src="lib/angular-route.js"></script>
+        <script src="app.js"></script>
+
+        <script src="views/view_home/home.js"></script>
+        <script src="views/view_search/search.js"></script>
+        <script src="views/view_gig/gig.js"></script>
+    </body>
+</html>
