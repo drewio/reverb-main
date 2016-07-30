@@ -57,7 +57,7 @@ body {
 
 .search-content {
 	width: 100%;
-	background: white;
+	background: #ECEFF1;
     position: absolute;
     top: 75px;
     bottom: 0;
@@ -67,7 +67,8 @@ body {
 
 .search-table-container {
 	margin: 0 auto;
-	width: 60%;
+    width: 80%;
+    max-width: 800px;
 }
 
 .search-result {
@@ -134,7 +135,7 @@ body {
     vertical-align: middle;
 }
 
-.shit {
+.ticket-btn {
 	    font-size: 8px;
     line-height: 1.5;
     border-radius: 500px;
@@ -143,7 +144,7 @@ body {
     background-color: #2ebd59;
         border-width: 0;
     letter-spacing: 1.2px;
-    min-width: 130px;
+    /*min-width: 130px;*/
     text-transform: uppercase;
     white-space: normal;
 }
@@ -228,4 +229,30 @@ button:focus {outline:0;}
     height: 17px;
     width: 308px;
     padding-left: 30px;
+}
+.card {
+    height: 100%;
+}
+@media (max-width: 770px) {
+    .card{
+        width: 100% !important;
+    }
+    .ticket-btn{
+        padding:6px 16px 6px;
+    }
+}
+
+.title {
+    max-height: 1em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 90%;
+    white-space: nowrap;
+}
+
+.subtitle {
+    max-height: 2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80%;
 }
