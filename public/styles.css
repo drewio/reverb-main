@@ -116,15 +116,23 @@ body {
 }
 
 .top-bar {
-	width: 60%;
+    width: 60%;
     margin: 0 auto;
-    line-height: 75px;
+    line-height: 73px;
+}
+
+.top-bar img {
+	display: inline-block;
+    height: 50px;
+    vertical-align: middle;
 }
 
 .top-bar h2 {
-	font-size: 58px;
+	font-size: 45px;
 	font-weight: bold;
 	color: white;
+	display: inline-block;
+    vertical-align: middle;
 }
 
 .shit {
@@ -139,4 +147,34 @@ body {
     min-width: 130px;
     text-transform: uppercase;
     white-space: normal;
+}
+
+.btn-absolute-wrap {
+	position: fixed;
+    top: 0;
+    right: calc(20%);;
+    left: 0;
+    margin: auto;
+    z-index: 999;
+    text-align: right;
+}
+
+.btn-absolute-wrap a:hover {
+    color: white;
+}
+
+.btn-absolute {
+	position: relative;
+    top: 0;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 600;
+    padding: .79em 1.3em .75em;
+    z-index: 999;
+}
+
+.btn-orange {
+    background: #c18b39;
+    color: #eabb7c;
+    fill: #eabb7c;
 }

@@ -51,5 +51,5 @@ angular.module('myApp.searchpage', ['ngRoute'])
 // Configure th
 .controller('SearchCtrl', ['$scope', 'GET_SEARCH', function($scope, GET_SEARCH) {
     $scope.result = GET_SEARCH;
-    $scope.users = ['Fabio', 'Leonardo', 'Thomas', 'Gabriele', 'Fabrizio', 'John', 'Luis', 'Kate', 'Max']
+    $scope.users = ['Fabio', 'Leonardo', 'Thomas', 'Gabriele', 'Fabrizio', 'John', 'Luis', 'Kate', 'Max', 'Nice', 'Start', 'Mate', 'Do', 'You', 'Even', 'Lift', 'Brah']
 }]);
