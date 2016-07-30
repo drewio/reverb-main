@@ -72,8 +72,6 @@ app.get('/callback', passport.authenticate('spotify', {failureRedirect: '/'}), f
 	res.render(__dirname + '/public/index.html', {searchid: req.user.id});
 });
 
-
-
 app.get('/user', function(req, res){
 
 	getUserSpotifySongs(function(urls){
@@ -95,11 +93,11 @@ app.get('/user', function(req, res){
 	});
 });
 
-app.get('/gig', function(req, res){
-	ref = db.ref('/gigs/' + ref.query.gig)
-	ref.once("value", function(data){
-		res.json({user: req.query.id, gig: data.val()});
-	})
+app.get('/userid', function(req,res){
+	console.log(req.query.id);
+	getGigSuggestions(function(gigs){
+		res.json(gigs);
+	});
 });
 
 var getUserSpotifySongs = function(callback){
@@ -116,10 +114,17 @@ var getUserSpotifySongs = function(callback){
 	})
 }
 
-var getUserSpotifySuggestions = function(callback){
-	spotify.getMy
+var getGigSuggestions = function(callback){
+	ref = db.ref('/gigs/');
+	ref.once('value', function(data){
+		var gigs = data.val();
+		var finalgigs = []
+		for(var key in gigs){
+			finalgigs.push(gigs[key]);
+		}
+		callback(finalgigs)
+	})
 }
-
 
 var createUserObject = function(profile, refreshToken){
 	var user = {url: profile.profileUrl, country: profile.country}
@@ -144,7 +149,6 @@ console.log('listening on 3000');
 
   app.get('/test', function(req, res){
 
-  	myFunc()
 
 });
 

@@ -4,7 +4,7 @@
 		<div class="btn-absolute-wrap">
 			<a class="btn btn-orange btn-absolute" href="#!/" ng-onClick="resetAttr()">
 				<span>+ New Search</span>
-			</a>s
+			</a>
 		</div>
 
 		<div class="top-bar">
@@ -20,17 +20,10 @@
 
 				<div class="column is-one-quarter" ng-repeat="user in users">
 					<div class="card">
-						<div class="grid-item-date">
-							23 Feb
-						</div>
-
-						<div class="grid-item-percent">
-							80%
-						</div>
 						<!-- IMAGE -->
 						<div class="card-image">
 							<figure class="image is-4by3">
-								<img src="http://placehold.it/300x225" alt="">
+								<img src={{user.artists[0].album_image}} alt="">
 							</figure>
 						</div>
 
@@ -45,8 +38,15 @@
 						<div class="card-content">
 							<div class="media">
 								<div class="media-content">
-									<p class="title is-5">{{user}}</p>
-									<p class="subtitle is-6">23 Smith St, Melbourne</p>
+									<div class="grid-item-date">
+								{{user.date}}
+							</div>
+
+							<div class="grid-item-percent">
+								0.8
+							</div>
+									<p class="title is-5">{{user.venue}}</p>
+									<p class="subtitle is-6">{{user.location.address}}</p>
 									<div class="check-it-btn">
 										<button class="shit" id="btn-comment">Buy Tickets</button>
 									</div>

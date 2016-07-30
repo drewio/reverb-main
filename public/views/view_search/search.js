@@ -25,15 +25,17 @@ angular.module('myApp.searchpage', ['ngRoute'])
         getMessage: function(){
             // These are the parameters used to call the backend
             console.log($route.current.params);
+            console.log('ads')
 
             // This is the promise used to communicate with the backend
             var promise = $http({
                 method: 'GET', 
-                url: 'https://www.reddit.com/.json'
+                url: 'http://localhost:3000/userid?id=' + $route.current.params.searchid
             })
 
             // What to do if the shit is returned.
             .success(function(data, status, headers, config) {
+                //console.log(data);
                 return data;
              })
 
@@ -53,6 +55,14 @@ angular.module('myApp.searchpage', ['ngRoute'])
     $scope.resetAttr = function () {
         console.log('back')
     }
+
+    var venues = []
+
     $scope.result = GET_SEARCH;
-    $scope.users = ['Fabio', 'Leonardo', 'Thomas', 'Gabriele', 'Fabrizio', 'John', 'Luis', 'Kate', 'Max', 'Nice', 'Start', 'Mate', 'Do', 'You', 'Even', 'Lift', 'Brah']
+    var gigs = $scope.result.data;
+    console.log(gigs);
+    for(var i = 0; i < 30; i++){
+        venues.push(gigs[i]);
+    }
+    $scope.users = venues;
 }]);
