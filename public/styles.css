@@ -258,7 +258,7 @@ button:focus {outline:0;}
     border: 2px solid white;
     text-transform: uppercase;
     white-space: normal;
-    padding: 18px;
+    padding: 2px;
     padding-right: 35px;
     padding-left: 35px;
 }
@@ -288,4 +288,18 @@ button:focus {outline:0;}
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 80%;
+}
+
+img#home-spoti-logo {
+    width: 48px;
+    float: left;
+    transform: translateX(-20px);
+    padding: 0;
+}
+
+#home-spoti-text {
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transform: translateX(-15px);
 }
