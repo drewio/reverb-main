@@ -289,3 +289,9 @@ button:focus {outline:0;}
     text-overflow: ellipsis;
     max-width: 80%;
 }
+
+.home-wrapper h2 {
+    padding-bottom: 21px;
+    font-size: 19px;
+    color: white;
+}
