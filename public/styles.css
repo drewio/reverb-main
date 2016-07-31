@@ -14,8 +14,7 @@ body {
 
 .background-layer {
     height: 100%;
-    background-image: url("../images/background.jpg");
-    background-color: #ffa200;
+    background-color: #ff9800;
     background-size: cover;
     background-position: 0;
     background-repeat: no-repeat;
@@ -125,6 +124,7 @@ body {
 	display: inline-block;
     height: 50px;
     vertical-align: middle;
+    padding-right: 10px;
 }
 
 .top-bar h2 {
@@ -308,4 +308,28 @@ img#home-spoti-logo {
     padding-top: 15px;
     padding-bottom: 15px;
     transform: translateX(-15px);
+}
+
+footer.modal-card-foot {
+    border-top: .5px solid rgb(230,230,230);
+    background-color: rgb(252,252,252);
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: flex-end;
+    justify-content: flex-end;
+}
+
+header.modal-card-head {
+    border-top: .5px solid rgb(230,230,230);
+    background-color: #ff9800;
+}
+
+p.modal-card-title.ng-binding {
+    color: white;
+    font-weight: 600;
+}
+
+a.button.is-primary {
+    background-color: #2ebd59;
+    border-color: transparent;
+    color: white;
 }
