@@ -52,6 +52,8 @@ angular.module('myApp.searchpage', ['ngRoute'])
 
 // Configure th
 .controller('SearchCtrl', ['$scope', 'GET_SEARCH', function($scope, GET_SEARCH) {
+    $scope.username = document.getElementById('route-view').getAttribute('searchid') || 'Users';
+
     $scope.resetAttr = function () {
         console.log('back')
     }
