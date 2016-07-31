@@ -1,3 +1,19 @@
+<div id="lolol" class="modal">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <header class="modal-card-head">
+      <p class="modal-card-title">{{modal_data.venue}}</p>
+      <button class="delete" ng-click="close_modal()"></button>
+    </header>
+    <section class="modal-card-body">
+       {{modal_data.date}}
+    </section>
+    <footer class="modal-card-foot">
+      <a class="button is-primary">Buy Tickets</a>
+    </footer>
+  </div>
+</div>
+
 <div class="search-container">
 	<div class="search-header">
 
@@ -65,7 +81,7 @@
 								</div>
 							</div>
 							<div class="check-it-btn">
-								<button class="ticket-btn" id="btn-comment">Buy Tickets</button>
+								<button class="ticket-btn" id="btn-comment" ng-click="open_modal($index)">Buy Tickets</button>
 							</div>
 						</div>
 					</div>

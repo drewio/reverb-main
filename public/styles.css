@@ -62,7 +62,7 @@ body {
     top: 75px;
     bottom: 0;
     overflow: scroll;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .search-table-container {
@@ -290,16 +290,13 @@ button:focus {outline:0;}
     max-width: 80%;
 }
 
-img#home-spoti-logo {
-    width: 48px;
-    float: left;
-    transform: translateX(-20px);
-    padding: 0;
-}
+<<<<<<< HEAD
 
-#home-spoti-text {
-    float: left;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    transform: translateX(-15px);
+=======
+.home-wrapper h2 {
+    padding-bottom: 21px;
+    font-size: 19px;
+    color: white;
 }
+>>>>>>> origin/master
+

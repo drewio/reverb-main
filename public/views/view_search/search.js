@@ -65,4 +65,14 @@ angular.module('myApp.searchpage', ['ngRoute'])
         venues.push(gigs[i]);
     }
     $scope.users = venues;
+
+    $scope.open_modal = function (index) {
+        $scope.modal_data = $scope.users[index];
+        document.getElementById("lolol").classList.add("is-active")
+    }
+
+    $scope.close_modal = function () {
+        document.getElementById("lolol").classList.remove("is-active")
+        $scope.modal_data = null;
+    }
 }]);
