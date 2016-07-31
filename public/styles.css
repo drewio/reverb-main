@@ -290,13 +290,22 @@ button:focus {outline:0;}
     max-width: 80%;
 }
 
-<<<<<<< HEAD
-
-=======
 .home-wrapper h2 {
     padding-bottom: 21px;
     font-size: 19px;
     color: white;
 }
->>>>>>> origin/master
 
+img#home-spoti-logo {
+    width: 48px;
+    float: left;
+    transform: translateX(-20px);
+    padding: 0;
+}
+
+#home-spoti-text {
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transform: translateX(-15px);
+}
