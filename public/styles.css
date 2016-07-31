@@ -333,3 +333,35 @@ a.button.is-primary {
     border-color: transparent;
     color: white;
 }
+
+h1.modal-band-name.ng-binding {
+    display: inline-block;
+    padding-top: 43px;
+    padding-bottom: 43px;
+    text-align: center;
+}
+.modal-band-info {
+    vertical-align: middle;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+img.modal-band-image {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+}
+.button.is-primary:hover, .button.is-primary:focus, .button.is-primary.is-active {
+    background-color: #2ebd59;
+    border-color: transparent;
+    color: white;
+}
+p.modal-date.ng-binding {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}

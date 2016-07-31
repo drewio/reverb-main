@@ -6,8 +6,14 @@
       <button class="delete" ng-click="close_modal()"></button>
     </header>
     <section class="modal-card-body">
-       {{modal_data.date}}
-       {{modal_data}}
+       <p class="modal-date">{{modal_data.date}}</p>
+       <div ng-repeat="artist in modal_data.artists">
+       		<div class="modal-band-info">
+	       		<img class="modal-band-image" style="background-image: url('{{artist.band_image}}')"/>
+	       		<h1 class="modal-band-name">{{artist.name}}</h1>
+       		</div>
+       </div>
+       <p class="modal-date">{{modal_data.description}}</p>
     </section>
     <footer class="modal-card-foot">
       <a class="button is-primary">Buy Tickets</a>
